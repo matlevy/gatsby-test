@@ -6,13 +6,13 @@ import { StoryblockFormatter } from '../utils/RichTextFormatter';
 
 
 const Feature = (props) => {
-
+	
 	return (
 		<SbEditable content={props.blok}>
 		<div className="col-8">
 			<h1>{props.blok.title}</h1>
 			<div>{props.blok.caption}</div>
-			<div dangerouslySetInnerHTML={{__html: StoryblockFormatter(props.blok.content)}}></div>
+			<content dangerouslySetInnerHTML={{__html: StoryblockFormatter(props.blok.content)}}></content>
 		</div>
 		</SbEditable>
 	)
