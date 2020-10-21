@@ -9,6 +9,7 @@ const Feature = (props) => (
     <div className="col-8">
         <h1>{props.blok.title}</h1>
         <div>{props.blok.caption}</div>
+        <div>{JSON.stringify(props.blok.content)}</div>
     </div>
   </SbEditable>
 )
